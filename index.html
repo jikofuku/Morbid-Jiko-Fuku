@@ -24,7 +24,7 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=uY2X3F"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=uY2X3F" type="text/css">
   
   <style>
-   #hero-16-ur4qWY24Wy {
+#hero-16-ur4qWY24Wy {
     background-image: url('assets/images/banner.webp'); /* Ensure this path is correct */
     background-size: cover; /* Default to cover for larger screens */
     background-position: center center; /* Center the image */
@@ -40,19 +40,25 @@
         background-size: contain; /* Use contain for mobile to avoid zoom */
         background-position: top center; /* Align the image at the top */
         padding: 0; /* Remove any padding */
+        display: flex; /* Use flexbox for centering */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        text-align: center; /* Center text */
     }
-    
+
+    .mbr-section-title, .mbr-text {
+        margin: 0; /* Remove margins to prevent gaps */
+    }
+
     .mbr-section-title {
         font-size: 1.5rem; /* Adjust title font size for mobile */
-        margin-top: 20px; /* Adjust margin for better spacing */
     }
-    
+
     .mbr-text {
         font-size: 1rem; /* Adjust paragraph font size for mobile */
-        margin-top: 10px; /* Adjust margin for better spacing */
+        margin-top: 5px; /* Add a small margin if needed */
     }
 }
-
 </style>  
   
   
@@ -105,7 +111,6 @@
         </div>
     </div>
 </section>
-
 
 <section data-bs-version="5.1" class="pricing02 cid-ur4qWY2F6x" id="product-list-8-ur4qWY2F6x">
     
