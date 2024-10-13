@@ -25,33 +25,31 @@
   
   <style>
    #hero-16-ur4qWY24Wy {
-    background-image: url('assets/images/banner.webp'); /* Ensure the path is correct */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center center; /* Centers the background image */
+    background-image: url('assets/images/banner.webp'); /* Ensure this path is correct */
+    background-size: cover; /* Default to cover for larger screens */
+    background-position: center center; /* Center the image */
     width: 100%;
     height: 400px; /* Default height for larger screens */
-    position: relative; /* For positioning the overlay */
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove any padding */
+    position: relative; /* Positioning for overlay */
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
     #hero-16-ur4qWY24Wy {
         height: 250px; /* Adjust height for mobile devices */
-        background-size: cover; /* Keep cover for better appearance */
-        background-repeat: no-repeat; /* Prevents background repetition */
-        padding: 0; /* Remove any padding to avoid gaps */
+        background-size: contain; /* Use contain for mobile to avoid zoom */
+        background-position: top center; /* Align the image at the top */
+        padding: 0; /* Remove any padding */
     }
     
     .mbr-section-title {
         font-size: 1.5rem; /* Adjust title font size for mobile */
-        margin-top: 0; /* Ensure there's no margin above the title */
+        margin-top: 20px; /* Adjust margin for better spacing */
     }
     
     .mbr-text {
         font-size: 1rem; /* Adjust paragraph font size for mobile */
-        margin-top: 0; /* Ensure there's no margin above the text */
+        margin-top: 10px; /* Adjust margin for better spacing */
     }
 }
 
