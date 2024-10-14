@@ -31,15 +31,23 @@
       }
     }
   
+    /* Hide the mobile banner on desktop */
+    @media (min-width: 768px) {
+      .mobile-banner {
+        display: none; /* Hides the mobile banner on desktop */
+      }
+    }
+  
     /* Mobile banner styles */
     @media (max-width: 767px) {
-      #hero-16-ur4qWY24Wy {
+      #hero-mobile {
         background-image: url('assets/images/mbanner.webp');
         background-size: cover; /* Adjust this if needed */
         background-position: center; /* Adjust this for centering */
       }
     }
   </style>
+  
   
 </head>
 <body>
