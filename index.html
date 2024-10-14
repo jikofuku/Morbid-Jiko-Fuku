@@ -31,15 +31,23 @@
       }
     }
   
+    /* Hide the mobile banner on desktop */
+    @media (min-width: 768px) {
+      .mobile-banner {
+        display: none; /* Hides the mobile banner on desktop */
+      }
+    }
+  
     /* Mobile banner styles */
     @media (max-width: 767px) {
-      #hero-16-ur4qWY24Wy {
+      #hero-mobile {
         background-image: url('assets/images/mbanner.webp');
         background-size: cover; /* Adjust this if needed */
         background-position: center; /* Adjust this for centering */
       }
     }
   </style>
+  
   
 </head>
 <body>
@@ -75,9 +83,8 @@
 		</div>
 	</nav>
 </section>
-
 <!-- Desktop Banner -->
-<section data-bs-version="5.1" class="header18 desktop-banner cid-ur4qWY24Wy mbr-fullscreen mbr-parallax-background" id="hero-16-ur4qWY24Wy">
+<section data-bs-version="5.1" class="header18 desktop-banner cid-ur4qWY24Wy mbr-fullscreen mbr-parallax-background" id="hero-desktop">
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
     <div class="container-fluid">
       <div class="row">
@@ -92,9 +99,8 @@
     </div>
   </section>
   
-  
   <!-- Mobile Banner -->
-  <section data-bs-version="5.1" class="header18 cid-ur4qWY24Wy mbr-fullscreen mbr-parallax-background" id="hero-16-ur4qWY24Wy" style="background-image: url('assets/images/banner.webp');">
+  <section data-bs-version="5.1" class="header18 mobile-banner cid-ur4qWY24Wy mbr-fullscreen mbr-parallax-background" id="hero-mobile">
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
     <div class="container-fluid">
       <div class="row">
@@ -107,6 +113,8 @@
         </div>
       </div>
     </div>
+  </section>
+  
   </section>
 
 <section data-bs-version="5.1" class="pricing02 cid-ur4qWY2F6x" id="product-list-8-ur4qWY2F6x">
