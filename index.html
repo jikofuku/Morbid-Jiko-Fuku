@@ -24,19 +24,26 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=uY2X3F"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=uY2X3F" type="text/css"> 
   
   <style>
-    /* Hide the desktop banner on mobile */
-    @media (max-width: 767px) {
-      .desktop-banner {
-        display: none; /* Hides the desktop banner on mobile */
-      }
-    }
-  
-    /* Hide the mobile banner on desktop */
-    @media (min-width: 768px) {
-      .mobile-banner {
-        display: none; /* Hides the mobile banner on desktop */
-      }
-    }
+/* Hide desktop banner on mobile */
+@media (max-width: 767px) {
+  .desktop-banner {
+    display: none;
+  }
+}
+
+/* Show mobile banner on mobile */
+@media (max-width: 767px) {
+  .mobile-banner {
+    display: block;
+  }
+}
+
+/* Hide mobile banner on desktop */
+@media (min-width: 768px) {
+  .mobile-banner {
+    display: none;
+  }
+}
   
 /* Mobile banner styles */
 @media (max-width: 767px) {
